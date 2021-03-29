@@ -4,10 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwissTransportView"
+        xmlns:control="clr-namespace:SwissTransportView.Controls"
         mc:Ignorable="d"
         Title="SwissTransport" Height="450" Width="800"
-        Icon="/assets/train.ico">
+        Icon="/Assets/train.ico">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <control:StationSelectionControl x:Name="StartStation" Grid.Column="0" Grid.Row="0" />
+        <control:StationSelectionControl x:Name="EndStation" Grid.Column="1" Grid.Row="0" />
     </Grid>
 </Window>

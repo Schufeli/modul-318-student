@@ -7,7 +7,7 @@ using SwissTransport.Models;
 
 namespace SwissTransportView
 {
-    class MockData
+    public static class MockData
     {
         public static List<Station> GetStations()
         {
@@ -62,6 +62,7 @@ namespace SwissTransportView
             stationsList.Add(s3);
 
             return stationsList;
+        }
         
     }
 }
