@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="SwissTransportView.Controls.StationSearchBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SwissTransportView.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="26" d:DesignWidth="226">
+
+    <Grid Width="226">
+        <Border BorderThickness="1" BorderBrush="Gray">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <TextBox x:Name="StationSearchTextBox"  Height="24" Width="200" HorizontalAlignment="Left" BorderBrush="White" FontSize="15" TextChanged="GetStationsOnTextChanged"/>
+                <Button Height="24" Width="24" HorizontalAlignment="Left" Background="White" BorderBrush="White">
+                    <Image Source="/Assets/place.ico" />
+                </Button>
+            </StackPanel>
+        </Border>
+        <Popup x:Name="StationListPopup" Visibility="Collapsed" Height="100" StaysOpen="False" Placement="Bottom">
+            <ListBox x:Name="StationList"  Visibility="Collapsed" Height="100" Width="226" SelectionChanged="StationListOnSelectionChanged">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label Content="{Binding Name}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Popup>
+    </Grid>
+</UserControl>

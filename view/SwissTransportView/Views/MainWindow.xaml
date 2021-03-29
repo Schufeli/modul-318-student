@@ -14,10 +14,9 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Height="26" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <control:StationSelectionControl x:Name="StartStation" Grid.Column="0" Grid.Row="0" />
-        <control:StationSelectionControl x:Name="EndStation" Grid.Column="1" Grid.Row="0" />
+        <control:StationSearchBox Grid.Column="0" Grid.Row="0"/>
     </Grid>
 </Window>
