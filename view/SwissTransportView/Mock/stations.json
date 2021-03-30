@@ -86,7 +86,7 @@
     },
     {
       "id": "8589793",
-      "name": "Luzern, Gütsch",
+      "name": "Luzern, GÃ¼tsch",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -122,7 +122,7 @@
     },
     {
       "id": "8508799",
-      "name": "Ennetbürgen, Dorf",
+      "name": "EnnetbÃ¼rgen, Dorf",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -134,7 +134,7 @@
     },
     {
       "id": "8508710",
-      "name": "Ennetbürgen, Flugplatz",
+      "name": "EnnetbÃ¼rgen, Flugplatz",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -146,7 +146,7 @@
     },
     {
       "id": "8508712",
-      "name": "Ennetbürgen, Riedmatt",
+      "name": "EnnetbÃ¼rgen, Riedmatt",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -158,7 +158,7 @@
     },
     {
       "id": "8572940",
-      "name": "Ennetbürgen, Herdern",
+      "name": "EnnetbÃ¼rgen, Herdern",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -170,7 +170,7 @@
     },
     {
       "id": "8572941",
-      "name": "Ennetbürgen, Oeltrotte",
+      "name": "EnnetbÃ¼rgen, Oeltrotte",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -182,7 +182,7 @@
     },
     {
       "id": "8572942",
-      "name": "Ennetbürgen, Strandbad",
+      "name": "EnnetbÃ¼rgen, Strandbad",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -194,7 +194,7 @@
     },
     {
       "id": "8508465",
-      "name": "Ennetbürgen (See)",
+      "name": "EnnetbÃ¼rgen (See)",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -206,7 +206,7 @@
     },
     {
       "id": null,
-      "name": "Ennetbürgen, Stanserstr. ",
+      "name": "EnnetbÃ¼rgen, Stanserstr. ",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -218,7 +218,7 @@
     },
     {
       "id": null,
-      "name": "Ennetbürgen, Bürgenstockstr. ",
+      "name": "EnnetbÃ¼rgen, BÃ¼rgenstockstr. ",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -230,7 +230,7 @@
     },
     {
       "id": null,
-      "name": "Ennetbürgen, Hofurlistr. ",
+      "name": "EnnetbÃ¼rgen, Hofurlistr. ",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -302,7 +302,7 @@
     },
     {
       "id": null,
-      "name": "Raiffeisenbank Nidwalden Genossenschaft, Buochs, Ennetbürgerstr. 1",
+      "name": "Raiffeisenbank Nidwalden Genossenschaft, Buochs, EnnetbÃ¼rgerstr. 1",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -326,7 +326,7 @@
     },
     {
       "id": null,
-      "name": "Raiffeisenbank Nidwalden Genossenschaft, Ennetbürgen, Buochserstr. 1a",
+      "name": "Raiffeisenbank Nidwalden Genossenschaft, EnnetbÃ¼rgen, Buochserstr. 1a",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -446,7 +446,7 @@
     },
     {
       "id": "8530721",
-      "name": "Beckenried Niederdorf (Fähre)",
+      "name": "Beckenried Niederdorf (FÃ¤hre)",
       "score": null,
       "coordinate": {
         "type": "WGS84",
@@ -470,7 +470,7 @@
     },
     {
       "id": null,
-      "name": "Beckenried, Rütenenstr. ",
+      "name": "Beckenried, RÃ¼tenenstr. ",
       "score": null,
       "coordinate": {
         "type": "WGS84",
