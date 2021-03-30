@@ -10,14 +10,15 @@
         <Border BorderThickness="1" BorderBrush="Gray">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
                 <ComboBox 
-                    x:Name="StationSearchComboBox" IsEditable="True" IsTextSearchEnabled="False"
+                    x:Name="StationSearchComboBox" 
+                    IsEditable="True" IsTextSearchEnabled="False"
                     Height="24" Width="200" HorizontalAlignment="Left" 
-                    BorderBrush="White" FontSize="15"
-                    SelectedItem="{Binding Path=SelectedStation}"
-                    DisplayMemberPath="Name"                      
+                    BorderBrush="White" FontSize="15"   
                     TextBoxBase.TextChanged="GetStationsOnTextChanged"
                     MouseDoubleClick="StationSearchComboBoxOnMouseDoubleClick"
-                    ItemsSource="{Binding Path=FilteredStations}">
+                    ItemsSource="{Binding Path=FilteredStations}"
+                    SelectedItem="{Binding Path=SelectedStation}"
+                    DisplayMemberPath="Name">
                     <ComboBox.ItemContainerStyle>
                         <Style TargetType="ComboBoxItem">
                             <Setter Property="MaxWidth" Value="200" />
