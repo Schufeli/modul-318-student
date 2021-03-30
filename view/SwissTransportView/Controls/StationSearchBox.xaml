@@ -17,7 +17,7 @@
             </StackPanel>
         </Border>
         <Popup x:Name="StationListPopup" Visibility="Collapsed" Height="100" StaysOpen="False" Placement="Bottom">
-            <ListBox x:Name="StationList"  Visibility="Collapsed" Height="100" Width="226" SelectionChanged="StationListOnSelectionChanged">
+            <ListBox x:Name="StationList" Visibility="Collapsed" Height="100" Width="226" SelectionChanged="StationListOnSelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Label Content="{Binding Name}" />
