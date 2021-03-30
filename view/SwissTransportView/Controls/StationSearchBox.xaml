@@ -18,6 +18,11 @@
                     TextBoxBase.TextChanged="GetStationsOnTextChanged"
                     MouseDoubleClick="StationSearchComboBoxOnMouseDoubleClick"
                     ItemsSource="{Binding Path=FilteredStations}">
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="ComboBoxItem">
+                            <Setter Property="MaxWidth" Value="200" />
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
                 </ComboBox>
                 <Button Height="24" Width="24" HorizontalAlignment="Left" Background="White" BorderBrush="White">
                     <Image Source="/Assets/place.ico" />
