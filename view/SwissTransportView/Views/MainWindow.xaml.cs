@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using SwissTransport.Core;
+using SwissTransport.Models;
+using SwissTransportView.ViewModels;
 
 namespace SwissTransportView
 {
@@ -21,9 +23,27 @@ namespace SwissTransportView
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ITransport transport = new Transport();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void StationBoardSearchButtonOnClick(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(StationBoardSearchBox.StationSearchComboBox.Text))
+            {
+                MessageBox.Show("Please select a Station");
+            }
+            var stationSearchBox = StationBoardSearchBox.DataContext as StationSearchBoxViewModel;
+            if (stationSearchBox.FilteredStations.Count < 1) 
+            {
+                MessageBox.Show("Please select a valid Station");
+            } 
+            else
+            {
+                var station = stationSearchBox.FilteredStations[0];
+            }
         }
     }
 }
