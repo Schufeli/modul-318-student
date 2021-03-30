@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SwissTransportView"
         xmlns:control="clr-namespace:SwissTransportView.Controls"
         mc:Ignorable="d"
-        Title="SwissTransport" Height="450" Width="800"
+        Title="SwissTransport" Height="450" Width="600" ResizeMode="NoResize"
         Icon="/Assets/train.ico">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,9 +14,11 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="26" />
+            <RowDefinition Height="52" />
+            <RowDefinition Height="52" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <control:StationSearchBox Grid.Column="0" Grid.Row="0"/>
+        <control:StationSearchBox Grid.Column="0" Grid.Row="0" Height="26"/>
+        <control:StationSearchBox Grid.Column="1" Grid.Row="0" Height="26"/>
     </Grid>
 </Window>
