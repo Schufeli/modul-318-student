@@ -2,9 +2,7 @@
 {
     using System;
     using System.Net;
-
     using Newtonsoft.Json;
-
     using SwissTransport.Models;
 
     public class Transport : ITransport, IDisposable
@@ -22,7 +20,12 @@
             }
 
             var uri = new Uri($"{WebApiHost}locations?query={query}");
-            return HttpClient.GetObject(uri, JsonConvert.DeserializeObject<Stations>);
+            return HttpClient.GetObject(uri,
+                input => JsonConvert.DeserializeObject<Stations>(input,
+                new JsonSerializerSettings
+                {
+                    NullValueHandling = NullValueHandling.Ignore
+                }));
         }
 
         public StationBoardRoot GetStationBoard(string station, string id)
