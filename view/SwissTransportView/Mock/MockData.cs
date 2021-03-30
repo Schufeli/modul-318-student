@@ -16,7 +16,11 @@ namespace SwissTransportView.Mock
             using (StreamReader reader = new StreamReader("Mock/stations.json"))
             {
                 string json = reader.ReadToEnd();
-                return JsonConvert.DeserializeObject<Stations>(json);
+                return JsonConvert.DeserializeObject<Stations>(
+                    json, 
+                    new JsonSerializerSettings { 
+                        NullValueHandling = NullValueHandling.Ignore 
+                    });
             }
         }
     }

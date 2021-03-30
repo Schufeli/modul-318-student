@@ -1,19 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using SwissTransport.Models;
 using SwissTransportView.Mock;
+using SwissTransport.Core;
 
 namespace SwissTransportView.Controls
 {
@@ -22,7 +13,7 @@ namespace SwissTransportView.Controls
     /// </summary>
     public partial class StationSearchBox : UserControl
     {
-        private Stations stations { get; set; }
+        public Stations Stations { get; set; }
         public StationSearchBox()
         {
             InitializeComponent();
@@ -42,11 +33,11 @@ namespace SwissTransportView.Controls
                     this.CloseSuggestionPopup();
                     return;
                 }
-                this.stations = MockData.GetStations(); // TODO: Remove after development fetches MockData
+                this.Stations = MockData.GetStations(); // TODO: Remove after development fetches 
                 this.OpenSuggestionPopup();
 
-                this.StationList.ItemsSource = this.stations.StationList.Where(
-                    s => s.Name.ToLower().StartsWith((sender as TextBox).Text.ToLower()) && s.Id != null) // TODO: Fix is null exception while searching list
+                this.StationList.ItemsSource = this.Stations.StationList.Where(
+                    s => s.Name.ToLower().StartsWith((sender as TextBox).Text.ToLower()))
                     .ToList();
             }
             catch (Exception ex)
