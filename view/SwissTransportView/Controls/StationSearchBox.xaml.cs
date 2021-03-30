@@ -33,7 +33,7 @@ namespace SwissTransportView.Controls
                     this.CloseSuggestionPopup();
                     return;
                 }
-                this.Stations = MockData.GetStations(); // TODO: Remove after development fetches 
+                this.Stations = MockData.GetStations(); // TODO: Remove after development fetches mock data
                 this.OpenSuggestionPopup();
 
                 this.StationList.ItemsSource = this.Stations.StationList.Where(
