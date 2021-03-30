@@ -31,4 +31,5 @@
         [JsonProperty("stations", NullValueHandling = NullValueHandling.Ignore)]
         public List<Station> StationList { get; set; }
     }
+
 }

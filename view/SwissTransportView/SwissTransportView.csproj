@@ -74,6 +74,8 @@
       <DependentUpon>StationSearchBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Mock\MockData.cs" />
+    <Compile Include="ViewModels\StationSearchBoxViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
