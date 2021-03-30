@@ -36,5 +36,15 @@ namespace SwissTransportView.Controls
             var textBox = (TextBox)StationSearchComboBox.Template.FindName("PART_EditableTextBox", StationSearchComboBox);
             textBox.CaretIndex = query.Length;
         }
+
+        /// <summary>
+        /// Focus StationSearchComboBox OnMouseDoubleClick
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StationSearchComboBoxOnMouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            StationSearchComboBox.Focus();
+        }
     }
 }
