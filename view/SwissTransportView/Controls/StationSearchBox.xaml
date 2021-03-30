@@ -9,14 +9,15 @@
     <Grid Width="226">
         <Border BorderThickness="1" BorderBrush="Gray">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                <ComboBox x:Name="StationSearchComboBox" IsEditable="True" IsTextSearchEnabled="False" ForceCursor="False"
-                          Height="24" Width="200" HorizontalAlignment="Left" 
-                         BorderBrush="White" FontSize="15"
-                         SelectedItem="{Binding Path=SelectedStation}"
-                         DisplayMemberPath="Name"                      
-                         TextBoxBase.TextChanged="GetStationsOnTextChanged"
-                         MouseDoubleClick="StationSearchComboBoxOnMouseDoubleClick"
-                         ItemsSource="{Binding Path=FilteredStations}">
+                <ComboBox 
+                    x:Name="StationSearchComboBox" IsEditable="True" IsTextSearchEnabled="False"
+                    Height="24" Width="200" HorizontalAlignment="Left" 
+                    BorderBrush="White" FontSize="15"
+                    SelectedItem="{Binding Path=SelectedStation}"
+                    DisplayMemberPath="Name"                      
+                    TextBoxBase.TextChanged="GetStationsOnTextChanged"
+                    MouseDoubleClick="StationSearchComboBoxOnMouseDoubleClick"
+                    ItemsSource="{Binding Path=FilteredStations}">
                 </ComboBox>
                 <Button Height="24" Width="24" HorizontalAlignment="Left" Background="White" BorderBrush="White">
                     <Image Source="/Assets/place.ico" />
