@@ -29,17 +29,18 @@ namespace SwissTransportView
             InitializeComponent();
         }
 
-        private void StationBoardSearchButtonOnClick(object sender, RoutedEventArgs e)
+        private void OpenStationBoardOnClick(object sender, RoutedEventArgs e)
         {
+            // TODO: this is the validation clean up tomorrow and refactor 
             if (string.IsNullOrEmpty(StationBoardSearchBox.StationSearchComboBox.Text))
             {
                 MessageBox.Show("Please select a Station");
             }
             var stationSearchBox = StationBoardSearchBox.DataContext as StationSearchBoxViewModel;
-            if (stationSearchBox.FilteredStations.Count < 1) 
+            if (stationSearchBox.FilteredStations.Count < 1)
             {
                 MessageBox.Show("Please select a valid Station");
-            } 
+            }
             else
             {
                 var station = stationSearchBox.FilteredStations[0];

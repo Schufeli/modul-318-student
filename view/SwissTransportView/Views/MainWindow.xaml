@@ -30,7 +30,7 @@
                 Background="#eb0000" 
                 Foreground="White" 
                 FontSize="14"
-                Click="StationBoardSearchButtonOnClick">
+                Click="OpenStationBoardOnClick">
             Open Stationboard
         </Button>
     </Grid>
