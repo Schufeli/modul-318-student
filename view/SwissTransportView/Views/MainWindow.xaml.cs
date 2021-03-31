@@ -29,6 +29,11 @@ namespace SwissTransportView
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Fill StationBoardListBox on OpenStationBoardButton On click event
+        /// </summary>
+        /// <param name="sender">Sender parameter</param>
+        /// <param name="e">Event parameter</param>
         private void OpenStationBoardOnClick(object sender, RoutedEventArgs e)
         {
             // TODO: this is the validation clean up tomorrow and refactor 
@@ -45,11 +50,6 @@ namespace SwissTransportView
             {
                 var station = stationSearchBox.FilteredStations[0];
                 var stationBoard = StationBoardListBox.DataContext as StationBoardListBoxViewModel;
-
-                //if (stationBoard.StationBoards.Count > 1)
-                //{
-                //    stationBoard.StationBoards.Clear();
-                //}
 
                 stationBoard.StationBoards = transport.GetStationBoard(station.Name, station.Id).Entries;
             }
