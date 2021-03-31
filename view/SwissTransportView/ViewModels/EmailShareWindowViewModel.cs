@@ -8,5 +8,11 @@ namespace SwissTransportView.ViewModels
 {
     public class EmailShareWindowViewModel : ViewModelBase
     {
+        private List<string> emailAdresses { get; set; }
+        public List<string> EmailAdresses
+        {
+            get { return emailAdresses; }
+            set { emailAdresses = value; OnPropertyChanged("EmailAdresses"); }
+        }
     }
 }
