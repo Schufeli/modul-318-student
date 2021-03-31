@@ -1,9 +1,5 @@
 ﻿using SwissTransport.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SwissTransportView.ViewModels
 {
@@ -15,11 +11,6 @@ namespace SwissTransportView.ViewModels
         {
             get { return connections; }
             set { connections = value; OnPropertyChanged("Connections"); }
-        }
-
-        public void LoadConnections(List<Connection> connections)
-        {
-            Connections = connections;
         }
     }
 }

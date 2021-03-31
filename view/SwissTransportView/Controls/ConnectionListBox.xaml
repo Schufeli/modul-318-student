@@ -26,6 +26,13 @@
                         <TextBlock Text="{Binding Path=Duration}" Margin="0, 5" />
                         <TextBlock Text="Platform: " Margin="5, 5, 0, 0" />
                         <TextBlock Text="{Binding Path=From.Platform}" Margin="0, 5" />
+                        <Button
+                            x:Name="ConnectionPrintButton"
+                            Height="24" Width="24" Margin="30, 0" 
+                            HorizontalAlignment="Right" Background="White"
+                            Click="ConnectionPrintButtonOnClick"> 
+                            <Image Source="/Assets/print.ico" />
+                        </Button>
                     </StackPanel>                
                 </DataTemplate>
             </ListBox.ItemTemplate>
