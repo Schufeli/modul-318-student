@@ -1,17 +1,5 @@
 ﻿using SwissTransportView.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace SwissTransportView.Views
 {
@@ -25,6 +13,46 @@ namespace SwissTransportView.Views
         {
             InitializeComponent();
             this.DataContext = vm;
+        }
+
+        /// <summary>
+        /// Add EmailAddressTextBox.Text to List when AddToListButton on OnClick
+        /// </summary>
+        /// <param name="sender">Sender Parameter</param>
+        /// <param name="e">Event Parameter</param>
+        private void AddToListButtonOnClick(object sender, RoutedEventArgs e)
+        {
+            vm.Add(EmailAddressTextBox.Text);
+        }
+
+        /// <summary>
+        /// Remove DataContext element from List OnClick
+        /// </summary>
+        /// <param name="sender">Sender Parameter</param>
+        /// <param name="e">Event Parameter</param>
+        private void RemoveEmailAddressFromList(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Send Email when SendEmailButton on OnClick
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SendEmailButtonOnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Close Window when CloseWindowButton on OnClick
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CloseWindowButtonOnClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

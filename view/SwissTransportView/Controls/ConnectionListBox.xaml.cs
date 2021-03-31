@@ -1,5 +1,6 @@
 ﻿using SwissTransport.Models;
 using SwissTransportView.ViewModels;
+using SwissTransportView.Views;
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -65,7 +66,13 @@ namespace SwissTransportView.Controls
         /// <param name="e">Event parameter</param>
         private void ConnectionShareButtonOnClick(object sender, RoutedEventArgs e)
         {
+            EmailShareWindow emailShareWindow = new EmailShareWindow();
 
+            Nullable<Boolean> shared = emailShareWindow.ShowDialog();
+            if (shared == true)
+            {
+                // TODO: Add send Email functionality via sendgrid
+            }
         }
     }
 }

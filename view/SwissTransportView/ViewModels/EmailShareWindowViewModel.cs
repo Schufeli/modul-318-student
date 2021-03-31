@@ -14,5 +14,18 @@ namespace SwissTransportView.ViewModels
             get { return emailAdresses; }
             set { emailAdresses = value; OnPropertyChanged("EmailAdresses"); }
         }
+
+        public EmailShareWindowViewModel() 
+        {
+            EmailAdresses = new List<string>();
+        }
+
+        public void Add(string email)
+        {
+            if (!string.IsNullOrEmpty(email))
+            {
+                EmailAdresses.Add(email);
+            }
+        }
     }
 }
