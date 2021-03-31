@@ -57,5 +57,15 @@ namespace SwissTransportView.Controls
                 printDialog.PrintDocument(idpSource.DocumentPaginator, "My Connection");
             }
         }
+
+        /// <summary>
+        /// Open EmailShareWindow when ConnectionShareButton OnClick event
+        /// </summary>
+        /// <param name="sender">Sender parameter</param>
+        /// <param name="e">Event parameter</param>
+        private void ConnectionShareButtonOnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

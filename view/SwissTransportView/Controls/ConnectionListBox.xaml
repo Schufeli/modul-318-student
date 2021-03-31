@@ -28,10 +28,17 @@
                         <TextBlock Text="{Binding Path=From.Platform}" Margin="0, 5" />
                         <Button
                             x:Name="ConnectionPrintButton"
-                            Height="24" Width="24" Margin="30, 0" 
+                            Height="24" Width="24" Margin="30, 0, 0, 0" 
                             HorizontalAlignment="Right" Background="White"
                             Click="ConnectionPrintButtonOnClick"> 
                             <Image Source="/Assets/print.ico" />
+                        </Button>
+                        <Button
+                            x:Name="ConnectionShareButton"
+                            Height="24" Width="24" Margin="10, 0" 
+                            HorizontalAlignment="Right" Background="White"
+                            Click="ConnectionShareButtonOnClick">
+                            <Image Source="/Assets/share.ico" />
                         </Button>
                     </StackPanel>                
                 </DataTemplate>
