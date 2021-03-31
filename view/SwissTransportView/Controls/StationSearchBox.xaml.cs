@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
 using SwissTransportView.ViewModels;
 
 namespace SwissTransportView.Controls
@@ -39,6 +40,25 @@ namespace SwissTransportView.Controls
         private void StationSearchComboBoxOnMouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             StationSearchComboBox.Focus();
+        }
+
+        /// <summary>
+        /// Open Browser with Google maps on StationPlaceButton OnClick
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OpenStationLocationMapOnClick(object sender, System.Windows.RoutedEventArgs e)
+        {
+            if(vm.FilteredStations == null)
+            {
+                MessageBox.Show("Please select a Station before trying to open the Map");
+            } else
+            {
+                string url = "https://maps.google.com/";
+                var station = vm.FilteredStations[0];
+
+                System.Diagnostics.Process.Start($"{url}?q={station.Coordinate.XCoordinate},{station.Coordinate.YCoordinate}");
+            }
         }
     }
 }
