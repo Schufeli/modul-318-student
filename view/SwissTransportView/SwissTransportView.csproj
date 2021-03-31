@@ -93,6 +93,7 @@
     </Compile>
     <Compile Include="Models\ToTimeConverter.cs" />
     <Compile Include="ViewModels\ConnectionListBoxViewModel.cs" />
+    <Compile Include="ViewModels\EmailShareWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\StationBoardListBoxViewModel.cs" />
     <Compile Include="ViewModels\StationSearchBoxViewModel.cs" />

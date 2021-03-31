@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SwissTransportView.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,11 @@ namespace SwissTransportView.Views
     /// </summary>
     public partial class EmailShareWindow : Window
     {
+        EmailShareWindowViewModel vm = new EmailShareWindowViewModel();
         public EmailShareWindow()
         {
             InitializeComponent();
+            this.DataContext = vm;
         }
     }
 }
