@@ -49,7 +49,7 @@
                 }));
         }
 
-        public Connections GetConnections(string fromStation, string toStation)
+        public Connections GetConnections(string fromStation, string toStation, string date, string time)
         {
             if (string.IsNullOrEmpty(fromStation))
             {
@@ -61,7 +61,7 @@
                 throw new ArgumentNullException(nameof(toStation));
             }
 
-            var uri = new Uri($"{WebApiHost}connections?from={fromStation}&to={toStation}");
+            var uri = new Uri($"{WebApiHost}connections?from={fromStation}&to={toStation}&date={date}&time={time}");
             return HttpClient.GetObject(uri, 
                 input => JsonConvert.DeserializeObject<Connections>(input,
                 new JsonSerializerSettings
