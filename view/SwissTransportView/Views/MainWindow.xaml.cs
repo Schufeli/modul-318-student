@@ -34,7 +34,7 @@ namespace SwissTransportView
 
             // Initialize DepartureDate and DepartureTime with current Device data
             vm.DepartureDate = DateTime.Now;
-            vm.DepartureTime = DateTime.Now.ToString("hh:mm");
+            vm.DepartureTime = DateTime.Now.ToString("HH:mm");
         }
 
         /// <summary>
