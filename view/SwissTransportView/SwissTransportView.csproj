@@ -137,5 +137,8 @@
   <ItemGroup>
     <Resource Include="Assets\train.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\print.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
