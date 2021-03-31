@@ -62,6 +62,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controls\StationBoardListBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\StationSearchBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,11 +81,15 @@
     <Compile Include="Controls\ConnectionListBox.xaml.cs">
       <DependentUpon>ConnectionListBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\StationBoardListBox.xaml.cs">
+      <DependentUpon>StationBoardListBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\StationSearchBox.xaml.cs">
       <DependentUpon>StationSearchBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Mock\MockData.cs" />
     <Compile Include="ViewModels\ConnectionListBoxViewModel.cs" />
+    <Compile Include="ViewModels\StationBoardListBoxViewModel.cs" />
     <Compile Include="ViewModels\StationSearchBoxViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
