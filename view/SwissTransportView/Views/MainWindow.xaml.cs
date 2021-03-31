@@ -54,5 +54,10 @@ namespace SwissTransportView
                 stationBoard.StationBoards = transport.GetStationBoard(station.Name, station.Id).Entries;
             }
         }
+
+        private void OpenConnectionListOnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
