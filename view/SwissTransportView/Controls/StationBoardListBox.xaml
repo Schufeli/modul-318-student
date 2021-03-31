@@ -4,14 +4,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SwissTransportView.Controls"
+             xmlns:models="clr-namespace:SwissTransportView.Models"
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="500">
+             d:DesignHeight="300" d:DesignWidth="500">
+    <UserControl.Resources>
+        <models:ToTimeConverter x:Key="ToTime" />
+    </UserControl.Resources>
     <Grid>
-        <ListBox Background="Gray" ItemsSource="{Binding Path=StationBoards}">
+        <ListBox
+            Margin="20, 0"
+            Background="Gray" 
+            ItemsSource="{Binding Path=StationBoards}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Margin="2" Background="White" Width="500">
-                        <TextBlock Text="{Binding Path=Stop.Departure.TimeOfDay}" Margin="5, 5" HorizontalAlignment="Right" />
+                    <StackPanel Orientation="Horizontal" Margin="2" Background="White" Width="490">
+                        <TextBlock Text="{Binding Path=Stop.Departure, Converter={StaticResource ToTime}}" Margin="5, 5" HorizontalAlignment="Right" />
                         <TextBlock Text="{Binding Path=Category}" Margin="5, 5, 0, 0" HorizontalAlignment="Center"/>
                         <TextBlock Text="{Binding Path=Number}" Margin="0, 5" HorizontalAlignment="Center"/>
                         <TextBlock Text="{Binding Path=To}" Margin="5, 5" HorizontalAlignment="Left"/>

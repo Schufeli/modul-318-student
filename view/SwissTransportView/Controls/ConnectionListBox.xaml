@@ -4,9 +4,31 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SwissTransportView.Controls"
+             xmlns:models="clr-namespace:SwissTransportView.Models"
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="500">
+             d:DesignHeight="100" d:DesignWidth="500">
+    <UserControl.Resources>
+        <models:ToTimeConverter x:Key="ToTime" />
+    </UserControl.Resources>
     <Grid>
-        <ListBox Background="Gray"></ListBox>
+        <ListBox 
+            Margin="20, 0"
+            Background="Gray"
+            ItemsSource="{Binding Path=Connections}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="2" Background="White" Width="500">
+                        <TextBlock Text="{Binding Path=To.Station.Name}" Margin="5, 5" />
+                        <TextBlock Text="{Binding Path=From.Departure, Converter={StaticResource ToTime}}" Margin="5, 5, 0, 0"/>
+                        <TextBlock Text="->" Margin="5, 5" />
+                        <TextBlock Text="{Binding Path=To.Arrival, Converter={StaticResource ToTime}}" Margin="0, 5" />
+                        <TextBlock Text="Duration: " Margin="5, 5, 0, 0" />
+                        <TextBlock Text="{Binding Path=Duration}" Margin="0, 5" />
+                        <TextBlock Text="Platform: " Margin="5, 5, 0, 0" />
+                        <TextBlock Text="{Binding Path=From.Platform}" Margin="0, 5" />
+                    </StackPanel>                
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>

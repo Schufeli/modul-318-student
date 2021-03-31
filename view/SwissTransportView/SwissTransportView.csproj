@@ -87,8 +87,9 @@
     <Compile Include="Controls\StationSearchBox.xaml.cs">
       <DependentUpon>StationSearchBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Mock\MockData.cs" />
+    <Compile Include="Models\ToTimeConverter.cs" />
     <Compile Include="ViewModels\ConnectionListBoxViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\StationBoardListBoxViewModel.cs" />
     <Compile Include="ViewModels\StationSearchBoxViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
@@ -115,9 +116,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Mock\stations.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
