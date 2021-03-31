@@ -17,7 +17,6 @@
                     TextBoxBase.TextChanged="GetStationsOnTextChanged"
                     MouseDoubleClick="StationSearchComboBoxOnMouseDoubleClick"
                     ItemsSource="{Binding Path=FilteredStations}"
-                    SelectedItem="{Binding Path=SelectedStation}"
                     DisplayMemberPath="Name">
                     <ComboBox.ItemContainerStyle>
                         <Style TargetType="ComboBoxItem">
