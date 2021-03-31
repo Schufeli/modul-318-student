@@ -53,7 +53,7 @@
         <control:StationSearchBox x:Name="StationBoardSearchBox" Grid.Column="0" Grid.Row="3" Height="26"/>
         <Button x:Name="StationBoardSearchButton" 
                 Grid.Column="1" Grid.Row="3" 
-                Margin="104,10,10,10" 
+                Margin="84.2,9.6,29.6,10.2" 
                 Background="#eb0000" 
                 Foreground="White" 
                 FontSize="14"

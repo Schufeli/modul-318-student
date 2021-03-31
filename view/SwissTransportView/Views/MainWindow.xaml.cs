@@ -38,7 +38,7 @@ namespace SwissTransportView
         }
 
         /// <summary>
-        /// Fill StationBoardListBox on OpenStationBoardButton On click event
+        /// Fill StationBoardListBox on OpenStationBoardButton OnClick event
         /// </summary>
         /// <param name="sender">Sender parameter</param>
         /// <param name="e">Event parameter</param>
@@ -63,6 +63,11 @@ namespace SwissTransportView
             }
         }
 
+        /// <summary>
+        /// Fill ConnectionListBox on ConnectionSearchButton OnClick event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OpenConnectionListOnClick(object sender, RoutedEventArgs e)
         {
             var startStationSearchBox = StartStationSearchBox.DataContext as StationSearchBoxViewModel;
@@ -115,6 +120,11 @@ namespace SwissTransportView
             TimeFormatValidator(input);
         }
 
+        /// <summary>
+        /// Validated the DepartureTimeTextBox input through Regex
+        /// </summary>
+        /// <param name="input">String to validate</param>
+        /// <returns></returns>
         private bool TimeFormatValidator(string input)
         {
             if (input.Length > 4)
