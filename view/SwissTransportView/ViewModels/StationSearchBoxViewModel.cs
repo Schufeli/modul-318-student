@@ -20,15 +20,17 @@ namespace SwissTransportView.ViewModels
 
         public void FilterStations(string query)
         {
-            Stations stations = MockData.GetStations(); // TODO: Remove after development and fetch real time data
+            //Stations stations = MockData.GetStations(); // TODO: Remove after development and fetch real time data
 
-            FilteredStations = stations.StationList.Where(
-                s => s.Name.ToLower().StartsWith(query.ToLower()))
-                    .ToList();
+            //FilteredStations = stations.StationList.Where(
+            //    s => s.Name.ToLower().StartsWith(query.ToLower()))
+            //        .ToList();
 
-
-            //Stations stations = transport.GetStations(query);
-            //FilteredStations = stations.StationList;
+            if (!string.IsNullOrEmpty(query))
+            {
+                Stations stations = transport.GetStations(query);
+                FilteredStations = stations.StationList;
+            }
         }
     }
 }

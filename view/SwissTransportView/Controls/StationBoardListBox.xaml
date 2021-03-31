@@ -10,11 +10,11 @@
         <ListBox Background="Gray" ItemsSource="{Binding Path=StationBoards}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Margin="2" Background="White" Width="400">
-                        <TextBlock Text="{Binding Path=To}" Margin="5, 5" HorizontalAlignment="Left"/>
+                    <StackPanel Orientation="Horizontal" Margin="2" Background="White" Width="500">
+                        <TextBlock Text="{Binding Path=Stop.Departure.TimeOfDay}" Margin="5, 5" HorizontalAlignment="Right" />
                         <TextBlock Text="{Binding Path=Category}" Margin="5, 5, 0, 0" HorizontalAlignment="Center"/>
                         <TextBlock Text="{Binding Path=Number}" Margin="0, 5" HorizontalAlignment="Center"/>
-                        <TextBlock Text="{Binding Path=Stop.Departure.TimeOfDay}" Margin="5, 5" HorizontalAlignment="Right" />
+                        <TextBlock Text="{Binding Path=To}" Margin="5, 5" HorizontalAlignment="Left"/>
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
