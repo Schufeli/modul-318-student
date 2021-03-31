@@ -14,5 +14,10 @@ namespace SwissTransportView.Controls
             InitializeComponent();
             this.DataContext = vm;
         }
+
+        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
+        }
     }
 }

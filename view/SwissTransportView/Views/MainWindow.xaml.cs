@@ -44,6 +44,14 @@ namespace SwissTransportView
             else
             {
                 var station = stationSearchBox.FilteredStations[0];
+                var stationBoard = StationBoardListBox.DataContext as StationBoardListBoxViewModel;
+
+                //if (stationBoard.StationBoards.Count > 1)
+                //{
+                //    stationBoard.StationBoards.Clear();
+                //}
+
+                stationBoard.StationBoards = transport.GetStationBoard(station.Name, station.Id).Entries;
             }
         }
     }

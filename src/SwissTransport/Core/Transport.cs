@@ -35,12 +35,12 @@
                 throw new ArgumentNullException(nameof(station));
             }
 
-            if (string.IsNullOrEmpty(id))
-            {
-                throw new ArgumentNullException(nameof(id));
-            }
+            //if (string.IsNullOrEmpty(id))
+            //{
+            //    throw new ArgumentNullException(nameof(id));
+            //}
 
-            var uri = new Uri($"{WebApiHost}stationboard?station={station}&id={id}");
+            var uri = new Uri($"{WebApiHost}stationboard?station={station}");
             return HttpClient.GetObject(uri, 
                 input => JsonConvert.DeserializeObject<StationBoardRoot>(input,
                 new JsonSerializerSettings
