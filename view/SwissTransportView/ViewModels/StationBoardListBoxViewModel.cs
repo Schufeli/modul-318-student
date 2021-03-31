@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SwissTransportView.ViewModels
 {
-    class StationBoardListBoxViewModel : ViewModelBase
+    public class StationBoardListBoxViewModel : ViewModelBase
     {
         private List<StationBoard> stationBoards;
         public List<StationBoard> StationBoards

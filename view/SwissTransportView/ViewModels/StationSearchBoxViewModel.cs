@@ -1,9 +1,6 @@
 ﻿using SwissTransport.Core;
 using SwissTransport.Models;
-using SwissTransportView.Mock;
 using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
 
 namespace SwissTransportView.ViewModels
 {
@@ -20,12 +17,6 @@ namespace SwissTransportView.ViewModels
 
         public void FilterStations(string query)
         {
-            //Stations stations = MockData.GetStations(); // TODO: Remove after development and fetch real time data
-
-            //FilteredStations = stations.StationList.Where(
-            //    s => s.Name.ToLower().StartsWith(query.ToLower()))
-            //        .ToList();
-
             if (!string.IsNullOrEmpty(query))
             {
                 Stations stations = transport.GetStations(query);

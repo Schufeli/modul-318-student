@@ -1,10 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Windows;
-using System.Windows.Controls;
-using SwissTransport.Models;
-using SwissTransportView.Mock;
-using SwissTransport.Core;
+﻿using System.Windows.Controls;
 using SwissTransportView.ViewModels;
 
 namespace SwissTransportView.Controls
