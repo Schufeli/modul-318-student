@@ -140,5 +140,8 @@
   <ItemGroup>
     <Resource Include="Assets\print.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\share.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
