@@ -49,7 +49,7 @@ namespace SwissTransportView.Controls
         /// <param name="e"></param>
         private void OpenStationLocationMapOnClick(object sender, System.Windows.RoutedEventArgs e)
         {
-            if(vm.FilteredStations == null)
+            if(vm.FilteredStations == null || vm.FilteredStations.Count <= 0 )
             {
                 MessageBox.Show("Please select a Station before trying to open the Map");
             } else
