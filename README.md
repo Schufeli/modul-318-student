@@ -6,5 +6,6 @@
 * [Installation / Deinstallation](./docs/installation-deinstallation.md)
 * [Testing](./docs/testing.md)
 * [Testprotocol](./docs/testprotocol.md)
+* [Result](./docs/result.md)
 
 
