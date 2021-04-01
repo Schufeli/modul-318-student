@@ -10,14 +10,14 @@ namespace SwissTransportView.ViewModels
 {
     public class EmailShareWindowViewModel : ViewModelBase
     {
-        private ObservableCollection<EmailAddress> emailAdresses { get; set; }
-        public ObservableCollection<EmailAddress> EmailAdresses
+        private ObservableCollection<CustomEmailAddress> emailAdresses { get; set; }
+        public ObservableCollection<CustomEmailAddress> EmailAdresses
         {
             get { return emailAdresses; }
             set { emailAdresses = value; OnPropertyChanged("EmailAdresses"); }
         }
 
-        public void Add(EmailAddress emailAddress)
+        public void Add(CustomEmailAddress emailAddress)
         {
             emailAdresses.Add(emailAddress);
         }

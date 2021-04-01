@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SwissTransportView.Models
 {
-    public class EmailAddress
+    public class CustomEmailAddress
     {
         public string Email { get; set; }
     }

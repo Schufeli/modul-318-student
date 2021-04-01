@@ -38,6 +38,9 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SendGrid, Version=9.22.0.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SendGrid.9.22.0\lib\net452\SendGrid.dll</HintPath>
+    </Reference>
     <Reference Include="StarkbankEcdsa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\starkbank-ecdsa.1.2.0\lib\net452\StarkbankEcdsa.dll</HintPath>
     </Reference>
@@ -95,7 +98,7 @@
     <Compile Include="Controls\StationSearchBox.xaml.cs">
       <DependentUpon>StationSearchBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\EmailAddress.cs" />
+    <Compile Include="Models\CustomEmailAddress.cs" />
     <Compile Include="Models\ToTimeConverter.cs" />
     <Compile Include="ViewModels\ConnectionListBoxViewModel.cs" />
     <Compile Include="ViewModels\EmailShareWindowViewModel.cs" />
