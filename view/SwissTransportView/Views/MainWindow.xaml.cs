@@ -80,13 +80,17 @@ namespace SwissTransportView
                 MessageBox.Show("Please select your Destination");
             }
 
-            if (startStationSearchBox.FilteredStations != null && endStationSearchBox.FilteredStations != null)
+            if (startStationSearchBox.FilteredStations != null && endStationSearchBox.FilteredStations != null 
+                && startStationSearchBox.FilteredStations.Count > 0 && endStationSearchBox.FilteredStations.Count > 0)
             {
                 connectionListBox.Connections = transport.GetConnections(
                 startStationSearchBox.FilteredStations[0].Name,
                 endStationSearchBox.FilteredStations[0].Name,
                 departureDate.ToString("yyyy-MM-dd"),
                 DepartureTimeTextBox.Text).ConnectionList;
+            } else
+            {
+                MessageBox.Show("Please check if your stations are valid");
             }
         }
 
