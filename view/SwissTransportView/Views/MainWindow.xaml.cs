@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using SwissTransport.Core;
+using SwissTransportView.Models;
 using SwissTransportView.ViewModels;
 
 namespace SwissTransportView
@@ -19,6 +20,12 @@ namespace SwissTransportView
         {
             InitializeComponent();
             this.DataContext = vm;
+
+            // Check if Internet connectin exists
+            if (!NetworkConnectionValidator.HasConnection())
+            {
+                MessageBox.Show("No active Internet connection detected!");
+            }
 
             // Initialize DepartureDate and DepartureTime with current Device data
             vm.DepartureDate = DateTime.Now;

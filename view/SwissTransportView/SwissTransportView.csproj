@@ -99,6 +99,7 @@
       <DependentUpon>StationSearchBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomEmailAddress.cs" />
+    <Compile Include="Models\NetworkConnectionValidator.cs" />
     <Compile Include="Models\ToTimeConverter.cs" />
     <Compile Include="ViewModels\ConnectionListBoxViewModel.cs" />
     <Compile Include="ViewModels\EmailShareWindowViewModel.cs" />
