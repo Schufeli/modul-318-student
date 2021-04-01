@@ -16,7 +16,7 @@
         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="0" Width="344" Margin="0,4">
             <Label Content="Email" Margin="0,10,0,0" Width="38"/>
             <TextBox TabIndex="1"
-            MaxLength="80"
+            MaxLength="50"
             x:Name="EmailAddressTextBox"
             Height="24"
             Width="222"
