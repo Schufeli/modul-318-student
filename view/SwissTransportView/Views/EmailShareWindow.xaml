@@ -14,13 +14,13 @@
             <RowDefinition Height="52"/>
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="0" Width="344" Margin="0,4">
-            <TextBox
+            <TextBox TabIndex="1"
             x:Name="EmailAddressTextBox"
             Height="24"
             Width="260"
             Margin="10,10"
             />
-            <Button
+            <Button TabIndex="2"
                 x:Name="AddToListButton"
                 Width="50"
                 Height="24"

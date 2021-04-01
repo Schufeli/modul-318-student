@@ -42,6 +42,7 @@ namespace SwissTransportView.Views
                 };
 
                 vm.Add(emailAddress);
+                EmailAddressTextBox.Clear();
             }
             else
             {
@@ -58,7 +59,7 @@ namespace SwissTransportView.Views
         {
             var item = (sender as Button).DataContext as CustomEmailAddress;
             vm.EmailAdresses.Remove(item);
-            EmailAddressTextBox.Clear();
+            
         }
 
         /// <summary>

@@ -39,7 +39,6 @@ namespace SwissTransportView
         /// <param name="e">Event parameter</param>
         private void OpenStationBoardOnClick(object sender, RoutedEventArgs e)
         {
-            // TODO: Validation if string is empty and FilteredStation = null opens both MessageBoxes
             if (string.IsNullOrEmpty(StationBoardSearchBox.StationSearchComboBox.Text))
             {
                 MessageBox.Show("Please select a Station");
@@ -88,9 +87,6 @@ namespace SwissTransportView
                 endStationSearchBox.FilteredStations[0].Name,
                 departureDate.ToString("yyyy-MM-dd"),
                 DepartureTimeTextBox.Text).ConnectionList;
-            } else
-            {
-                MessageBox.Show("yeet");
             }
         }
 
