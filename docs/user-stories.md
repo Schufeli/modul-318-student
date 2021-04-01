@@ -2,17 +2,17 @@
 
 ### User Stories
 
-| Id | Description | Priority | Status |
-| :--- | :--- | ---: | :---: |
-| A001 | Als User möchte ich eine Verbindung zwischen Start- und Endstation suchen können, um meine Reise planen zu können. | 1 | ✅ |
-| A002 | Als User möchte ich die nächsten vier Verbindungen zwischen den ausgewählten Station sehen, um meine Reise optimal und effizient zu planen. | 1 | ✅ |
-| A003 | Als User möchte ich, wenn ich den Stationsnamen eingebe, bereits Vorschläge für eine passende Station erhalten, um mir die Auswahl und die Bedienung der Applikation zu erleichtern. | 2 | ✅ |
-| A004 | Als User möchte ich eine Abfahrtstafel für jede Station anschauen können, wo ich alle ausgehenden Verbindungen dieser Station sehen kann, um bei kurzfristigen Änderungen schnell reagieren zu können | 2 | ✅ |
-| A005 | Als User möchte ich zukünftige Verbindungen suchen können, wobei ich das Datum und eine Uhrzeit eingeben kann, um die optimale Verbindung für mich zu finden. | 2 | ✅ |
-| A006 | Als User möchte ich eine Karte haben, bei welcher mir angezeigt wird, wo sich die ausgewählte Station befindet um sicher zu sein, dass ich auch bei der Station ankomme. | 3 | ✅ |
-| A007 | Als User möchte ich von meinem aktuellen Standort die nächstgelegenen Stationen auf einer Karte anzeigen lassen können, um immer die schnellste Route anhand meiner aktuellen Position anzeigen zu lassen. | 3 | ❌ |
-| A008 | Als User möchte ich meine Verbindungen per E-Mail weiterleiten können, damit ich meine Resultate teilen kann. | 3 | ✅ |
-| A009 | Als User möchte ich meine Verbindungen ausdrucken können, damit ich im falle eines niedrigen Akkustandes diese noch als Backup dabei haben kann. | 3 | ✅ |
+| Id | Titel | Description | Priority | Status |
+| :--- | :--- | :--- | ---: | :---: |
+| A001 | Verbindungsuchen | Als User möchte ich eine Verbindung zwischen Start- und Endstation suchen können, um meine Reise planen zu können. | 1 | ✅ |
+| A002 | Multiple verbindungen | Als User möchte ich die nächsten vier Verbindungen zwischen den ausgewählten Station sehen, um meine Reise optimal und effizient zu planen. | 1 | ✅ |
+| A003 | Stationsvorschläge | Als User möchte ich, wenn ich den Stationsnamen eingebe, bereits Vorschläge für eine passende Station erhalten, um mir die Auswahl und die Bedienung der Applikation zu erleichtern. | 2 | ✅ |
+| A004 | Stationabfahrtstafel | Als User möchte ich eine Abfahrtstafel für jede Station anschauen können, wo ich alle ausgehenden Verbindungen dieser Station sehen kann, um bei kurzfristigen Änderungen schnell reagieren zu können | 2 | ✅ |
+| A005 | Verbindungssuche nach Zeit und Datum | Als User möchte ich zukünftige Verbindungen suchen können, wobei ich das Datum und eine Uhrzeit eingeben kann, um die optimale Verbindung für mich zu finden. | 2 | ✅ |
+| A006 | Stationsstandort anzeige | Als User möchte ich eine Karte haben, bei welcher mir angezeigt wird, wo sich die ausgewählte Station befindet um sicher zu sein, dass ich auch bei der Station ankomme. | 3 | ✅ |
+| A007 | Stationen in der nähe | Als User möchte ich von meinem aktuellen Standort die nächstgelegenen Stationen auf einer Karte anzeigen lassen können, um immer die schnellste Route anhand meiner aktuellen Position anzeigen zu lassen. | 3 | ❌ |
+| A008 | Verbindung E-Mail weiterleitung | Als User möchte ich meine Verbindungen per E-Mail weiterleiten können, damit ich meine Resultate teilen kann. | 3 | ✅ |
+| A009 | Verbindung ausdrucken | Als User möchte ich meine Verbindungen ausdrucken können, damit ich im falle eines niedrigen Akkustandes diese noch als Backup dabei haben kann. | 3 | ✅ |
 
 ### Abnahmekriterien
 
