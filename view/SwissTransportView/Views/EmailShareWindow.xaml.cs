@@ -16,7 +16,7 @@ namespace SwissTransportView.Views
     {
         EmailShareWindowViewModel vm = new EmailShareWindowViewModel();
         public Connection Connection { get; set; }
-        public EmailShareWindow(Connection connection, Window window)
+        public EmailShareWindow(Connection connection)
         {
             InitializeComponent();
             this.DataContext = vm;
