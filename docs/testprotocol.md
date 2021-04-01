@@ -2,7 +2,7 @@
 
 * Die Unit Test wurden fehlerfrei durchgeführt.
 * Alle Testfälle konnten ohne Fehler durchgeführt werden.
-* Alle implementierten Funktionalitäten können ohne Probleme ausgeführt werden.
+* Alle implementierten Funktionalitäten können ohne Probleme ausgeführt werden
 
 | Test | Person | Date | Status |
 | :--- | :--- | :--- | :---: |
