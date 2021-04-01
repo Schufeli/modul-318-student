@@ -1,6 +1,6 @@
 # Activity Diagram
 
-Das Folgende Diagramm zeigt wie die Funktionen mit der Höchsten Prioriät der Applikation bedient werden.
+Das folgende Diagramm zeigt, wie Verbindungsuchenfunktion der Applikation bedient wird.
 
 ![](.gitbook/assets/activitydiagram.jpg)
 
