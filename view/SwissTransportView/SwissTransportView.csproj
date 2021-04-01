@@ -91,6 +91,7 @@
     <Compile Include="Controls\StationSearchBox.xaml.cs">
       <DependentUpon>StationSearchBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmailAddress.cs" />
     <Compile Include="Models\ToTimeConverter.cs" />
     <Compile Include="ViewModels\ConnectionListBoxViewModel.cs" />
     <Compile Include="ViewModels\EmailShareWindowViewModel.cs" />

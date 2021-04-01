@@ -66,13 +66,9 @@ namespace SwissTransportView.Controls
         /// <param name="e">Event parameter</param>
         private void ConnectionShareButtonOnClick(object sender, RoutedEventArgs e)
         {
-            EmailShareWindow emailShareWindow = new EmailShareWindow();
-
-            Nullable<Boolean> shared = emailShareWindow.ShowDialog();
-            if (shared == true)
-            {
-                // TODO: Add send Email functionality via sendgrid
-            }
+            var connection = (sender as Button).DataContext as Connection;
+            EmailShareWindow emailShareWindow = new EmailShareWindow(connection);
+            emailShareWindow.ShowDialog();
         }
     }
 }

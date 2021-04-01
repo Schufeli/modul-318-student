@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SwissTransportView.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,24 +10,16 @@ namespace SwissTransportView.ViewModels
 {
     public class EmailShareWindowViewModel : ViewModelBase
     {
-        private List<string> emailAdresses { get; set; }
-        public List<string> EmailAdresses
+        private ObservableCollection<EmailAddress> emailAdresses { get; set; }
+        public ObservableCollection<EmailAddress> EmailAdresses
         {
             get { return emailAdresses; }
             set { emailAdresses = value; OnPropertyChanged("EmailAdresses"); }
         }
 
-        public EmailShareWindowViewModel() 
+        public void Add(EmailAddress emailAddress)
         {
-            EmailAdresses = new List<string>();
-        }
-
-        public void Add(string email)
-        {
-            if (!string.IsNullOrEmpty(email))
-            {
-                EmailAdresses.Add(email);
-            }
+            emailAdresses.Add(emailAddress);
         }
     }
 }

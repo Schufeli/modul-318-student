@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwissTransportView.Views"
         mc:Ignorable="d"
-        Title="Share Window" Height="400" Width="300"
+        Title="Share Window" Height="400" Width="350"
         Icon="/Assets/share.ico">
     <Grid>
         <Grid.RowDefinitions>
@@ -13,11 +13,11 @@
             <RowDefinition />
             <RowDefinition Height="52"/>
         </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="0" Width="292" Margin="0,4">
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Grid.Row="0" Width="344" Margin="0,4">
             <TextBox
             x:Name="EmailAddressTextBox"
             Height="24"
-            Width="208"
+            Width="260"
             Margin="10,10"
             />
             <Button
@@ -34,11 +34,11 @@
                  Grid.Row="1"
                  Background="Gray"
                  Margin="10"
-                 ItemsSource="{Binding Path=EmailAdresses}">
+                 ItemsSource="{Binding EmailAdresses}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <DockPanel Background="White" Width="250">
-                        <TextBlock Text="{Binding}" Margin="10, 5"/>
+                    <DockPanel Background="White" Width="300">
+                        <TextBlock Text="{Binding Path=Email}" Margin="10, 5" />
                         <Button Click="RemoveEmailAddressFromList" Content="Remove" Margin="2" Background="White" HorizontalAlignment="Right"/>
                     </DockPanel>
                 </DataTemplate>
