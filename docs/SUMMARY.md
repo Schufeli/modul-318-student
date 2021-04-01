@@ -6,4 +6,5 @@
 * [Activity Diagram](activity-diagram.md)
 * [Installation / Deinstallation](installation-deinstallation.md)
 * [Testing](testing.md)
+* [Testprotocol](testprotocol.md)
 
